@@ -1,0 +1,48 @@
+body{
+	padding:20px;
+}
+
+
+hr {
+    margin:40px 0;
+} 
+h3 { color:#1758AA}
+h3 span {font-size:14px; display:block;}
+span[ng-click] {
+        cursor: pointer;
+    }
+    .col-xs-12.col-sm-4.text-center {
+    margin-bottom: 30px;
+    min-height: 280px;
+}
+.img-responsive.img-center {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.image {
+    position:relative;
+    width:190px;
+    height:191px;
+    margin: 0 auto;
+}
+.image img {
+    width:100%;
+    vertical-align:top;
+}
+.image:after {
+    content:'Click Here';
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  padding-top:80px;
+}
+.image:hover:after {
+    opacity:1;
+    cursor:pointer;
+}
